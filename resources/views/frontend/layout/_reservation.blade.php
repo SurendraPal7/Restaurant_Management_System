@@ -11,11 +11,15 @@
                         sollicitudin urna diam, sed commodo purus porta ut.</p>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="phone">
-                                <i class="fa fa-phone"></i>
-                                <h4>Phone Numbers</h4>
-                                <span><a href="#">080-090-0990</a><br><a href="#">080-090-0880</a></span>
-                            </div>
+                        <div class="phone">
+    <i class="fa fa-phone"></i>
+    <h4>Phone Numbers</h4>
+    <span>
+        <a href="tel:+91-0800900990">+91 080-090-0990</a><br>
+        <a href="tel:+91-0800900880">+91 080-090-0880</a>
+    </span>
+</div>
+
                         </div>
                         <div class="col-lg-6">
                             <div class="message">

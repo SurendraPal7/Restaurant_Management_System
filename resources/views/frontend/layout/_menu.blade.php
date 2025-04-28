@@ -16,7 +16,7 @@
                     <div class='card card1'>
 
                         <div class="price">
-                            <h6>$14</h6>
+                            <h6>Rs.349</h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Chocolate Cake</h1>
@@ -32,7 +32,7 @@
                 <div class="item">
                     <div class='card card2'>
                         <div class="price">
-                            <h6>$22</h6>
+                            <h6>Rs.479</h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Klassy Pancake</h1>
@@ -48,7 +48,7 @@
                 <div class="item">
                     <div class='card card3'>
                         <div class="price">
-                            <h6>$18</h6>
+                            <h6>Rs.189</h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Tall Klassy Bread</h1>
@@ -64,7 +64,7 @@
                 <div class="item">
                     <div class='card card4'>
                         <div class="price">
-                            <h6>$10</h6>
+                            <h6>Rs.199/h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Blueberry CheeseCake</h1>
@@ -80,7 +80,7 @@
                 <div class="item">
                     <div class='card card5'>
                         <div class="price">
-                            <h6>$8.50</h6>
+                            <h6>Rs.449</h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Klassy Cup Cake</h1>
@@ -96,7 +96,7 @@
                 <div class="item">
                     <div class='card card3'>
                         <div class="price">
-                            <h6>$7.25</h6>
+                            <h6>Rs.519</h6>
                         </div>
                         <div class='info'>
                             <h1 class='title'>Klassic Cake</h1>
