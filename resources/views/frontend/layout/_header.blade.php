@@ -1,3 +1,4 @@
+
 @php
     $logo = DB::table('logos')
         ->select(['image'])

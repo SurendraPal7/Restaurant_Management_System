@@ -49,11 +49,12 @@
                                 </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
-                                <fieldset>
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number*"
-                                        pattern="[0][1][7][0-9]{2}[0-9]{6}" required>
-                                    <span id="phoneerror" class="text-danger"></span>
-                                </fieldset>
+                            <fieldset>
+    <input type="tel" name="phone" id="phone" placeholder="Phone Number*" 
+        pattern="[6-9][0-9]{9}" required>
+    <span id="phoneerror" class="text-danger"></span>
+</fieldset>
+
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <fieldset>

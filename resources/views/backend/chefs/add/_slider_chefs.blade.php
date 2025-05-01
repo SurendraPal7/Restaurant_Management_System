@@ -20,7 +20,7 @@
                     <br>
                     <div class="row" align='center'>
                         <div class="col-4">
-                            <a href="https://www.facebook.com/" class="text-danger" style="cursor: pointer">
+                            <a href="#" class="text-danger" style="cursor: pointer">
                                 <li class="fas fa-facebook"></li>
                             </a>
 

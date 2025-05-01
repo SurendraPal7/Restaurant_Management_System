@@ -18,7 +18,7 @@
             </div>
             <div class="col-lg-4 col-xs-12">
                 <div class="left-text-content">
-                    <p>© Copyright Klassy Cafe Co.
+                    <p>© Copyright Chatkara Restaurant Co.
 
                         <br>Design: TemplateMo
                     </p>
