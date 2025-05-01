@@ -1,32 +1,42 @@
-# Use PHP image with necessary extensions
-FROM php:8.2-cli
+# Build React
+FROM node:18 AS react-build
+WORKDIR /app
+COPY react-app/ /app/
+RUN npm install
+RUN npm run build
 
-# Install system dependencies
+# Laravel and Apache
+FROM php:8.2-apache
+WORKDIR /var/www/html
+
+# Install dependencies
 RUN apt-get update && apt-get install -y \
-    unzip \
-    git \
-    curl \
-    libzip-dev \
-    zip \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    && docker-php-ext-install pdo_mysql mbstring zip exif pcntl bcmath gd
+    git unzip curl libzip-dev zip \
+    && docker-php-ext-install pdo pdo_mysql zip
+
+# Enable Apache Rewrite
+RUN a2enmod rewrite
+
+# Copy Laravel app
+COPY laravel-app/ /var/www/html/
+
+# Copy React build to Laravel public/
+COPY --from=react-build /app/build/ /var/www/html/public/
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Set working directory
-WORKDIR /var/www
-
-# Copy existing application directory contents
-COPY . .
-
-# Install dependencies
+# Install Laravel deps
 RUN composer install
 
-# Expose port
-EXPOSE 8000
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Start Laravel server
-CMD php artisan serve --host=0.0.0.0 --port=8000
+# Apache Config (optional custom .htaccess)
+COPY laravel-app/.htaccess /var/www/html/public/.htaccess
+
+# Expose port
+EXPOSE 80
+
+# Start Apache
+CMD ["apache2-foreground"]

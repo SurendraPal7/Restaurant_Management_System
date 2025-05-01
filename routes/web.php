@@ -101,5 +101,10 @@ Route::middleware( [
     // For Profile Picture Update
     Route::post( '/change-profile-picture', 'updatePicture' )->name( 'adminPictureUpdate' );
 
+
 } );
+Route::get('/{any}', function () {
+    return file_get_contents(public_path('index.html'));
+})->where('any', '.*');
+
 // Display For Admin End
